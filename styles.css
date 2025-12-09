@@ -1,0 +1,133 @@
+.container {
+
+    border-spacing: 0;
+    ;
+
+
+}
+
+.form_body {
+    border: 1px solid lightgray;
+    border-spacing: 0;
+    padding: 20px;
+}
+
+.titular {
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-spacing: 0;
+    padding: 15px 20px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px 10px 0 0;
+
+}
+
+h3 {
+    margin: 0;
+}
+
+.alert {
+    font-weight: 500;
+}
+
+.Card,
+.CVC,
+.Amount,
+.FName,
+.LName,
+.State,
+.Message,
+.PCode,
+.City,
+.PaymentDate {
+    font-weight: 500;
+}
+
+.borderinput{
+    border: lightgray 2px solid;
+    margin-top: 8px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    height: 40px;
+
+}
+
+textarea {
+
+    border: lightgray 2px solid;
+    margin-top: 8px;
+    padding: 3px 10px;
+    border-radius: 5px;
+
+}
+
+.colum-amount {
+
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+
+}
+
+select {
+    margin-top: 8px;
+    height: 40px;
+
+
+}
+
+.defaultOp {color:rgb(118, 118, 118);
+}
+
+
+.SelectDate{
+    color:rgb(118, 118, 118);
+}
+
+
+.PasarelaPagos {
+    background-color: rgb(90, 90, 90);
+    display: flex;
+    justify-content: space-between;
+    /*width: 50%;*/
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.white-icon {
+    color: white;
+
+}
+
+.PaymentDate {
+    display: block;
+}
+
+.PaymentDate input {
+    margin-top: 8px;
+    height: 40px;
+    border: lightgray 2px solid;
+    border-radius: 5px;
+     padding: 3px 10px;
+}
+
+.Message_note {
+    color: gray;
+    font-size: 0.8rem;
+    margin: 0;
+
+}
+
+.botones {
+    background-color: rgb(243, 243, 243);
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-spacing: 0;
+    padding: 15px 20px;
+    border-radius: 0 0 10px 10px;
+
+}

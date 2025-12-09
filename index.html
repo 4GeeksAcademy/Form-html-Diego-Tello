@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Payment form example</title>
+</head>
+
+<body>
+
+    <div class=" container">
+
+        <div class="titular">
+            <h3>Payment form example</h3>
+        </div>
+
+        <div class="form_body">
+            <div class="row">
+                <div class="col-12 Alert">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                </div>
+
+            </div>
+            <!--FILA1-->
+            <div class="row mb-3">
+                <div class="col-5 Card celdas">
+                    <label for="NumTarjeta">Card #</label>
+                    <input class="w-100 borderinput" name="Card#" type=”number” id="NumTarjeta"
+                        placeholder="1238 2418 4124 4783" />
+                </div>
+
+                <div class="col-3 CVC celdas">
+                    <label for="NumCVC">CVC#</label>
+                    <input class="w-100 borderinput" name="CVC" type=”number” id="NumCVC" placeholder="148" />
+
+                </div>
+
+                <div class="col-4  Amount celdas">
+                    <label for="NumAmount">Amount</label>
+                    <div class="colum-amount">
+                        <i class="fa-solid fa-dollar-sign currency"></i>
+                        <input class="w-100 borderinput" name="Amount" type=”number” id="NumAmount"
+                            placeholder="20.00" />
+                    </div>
+                </div>
+
+            </div>
+            <!--FILA2-->
+            <div class="row mb-3">
+                <div class="col-6 Fname  celdas">
+                    <label for="FName">First Name</label>
+                    <input class="w-100 borderinput" name="FName" type="text" id="FName" placeholder="Diego" />
+                </div>
+
+                <div class="col-6 LName celdas">
+                    <label for="LName">Last Name </label>
+                    <input class="w-100 borderinput" name="LName" type=”text id="LName" placeholder="Tello" />
+
+                </div>
+
+
+            </div>
+            <!--FILA3-->
+            <div class="row mb-3">
+
+
+                <div class="col-6 Card celdas">
+                    <label for="City">City</label>
+                    <input class="w-100 borderinput" name="City" type="text" id="City" placeholder="NY" />
+                </div>
+
+                <div class="col-3 State celdas">
+                    <label for="State ">State</label>
+                    <select class="w-100 borderinput" name="State" type="text" id="State">
+                        <option class="DefaultOp" value="default" selected disabled>Pick a State</option>
+                        <option value="opción 1">Alabama</option>
+                        <option value="opción 2">Alaska</option>
+                        <option value="opción 3">Arizona</option>
+                        <option value="opción 4">California</option>
+                        <option value="opción 5">Florida</option>
+                        <option value="opción 6">Kansas</option>
+                        <option value="opción 7">Montana</option>
+                        <option value="opción 8">New York</option>
+                        <option value="opción 9">Nevada</option>
+                        <option value="opción 10">Texas</option>
+                        <option value="opción 11">Washington</option>
+                        <option value="opción 12">Wisconsin</option>
+
+
+                    </select>
+
+                </div>
+
+                <div class="col-3  PCode celdas">
+                    <label for="PCode">Postal Code</label>
+                    <input class="w-100 borderinput" name="PCode" type="text" id="PCode" placeholder="08012" />
+                </div>
+
+
+
+            </div>
+
+            <!--FILA4-->
+
+            <div class="row mb-3 object-fit-cover">
+                <div class="col-3 ">
+                    <label class="Tit_PasarelaPagos" for="">We accept:</label>
+                    <div class="PasarelaPagos">
+                        <div class="P_Mastercard">
+                            <input type="radio" id="Mastercard" name="PasarelaPagos" />
+                            <label for="Mastedcard"><i class="fa-brands fa-cc-mastercard fa-lg white-icon"></i></label>
+                        </div>
+
+                        <div class="P_Visa">
+                            <input type="radio" id="Visa" name="PasarelaPagos" />
+                            <label for="Visa"><i class="fa-brands fa-cc-visa fa-lg white-icon"></i></label>
+                        </div>
+
+                        <div class="P_Diners">
+                            <input type="radio" id="Diners" name="PasarelaPagos" />
+                            <label for="Diners"><i class="fa-brands fa-cc-diners-club fa-lg white-icon"></i></label>
+                        </div>
+
+                        <div class="P_AmerExp">
+                            <input type="radio" id="AmerExp" name="PasarelaPagos" />
+                            <label for="AmerExp"><i class="fa-brands fa-cc-amex fa-lg white-icon"></i></label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-3 PaymentDate">
+                    <div><label for="Payment_Day">Select a payment date:</label></div>
+                   <div><input class="SelectDate" type="date" id="Payment_Day" name="reserva"></div>
+                </div>
+
+                <div class="col-6 Message">
+                    <label for="Message">Message</label>
+                    <textarea class="w-100" type="text" name="Message" id="Message" rows="4"> </textarea>
+                    <span class="Message_note">Add any notes here.</span>
+                </div>
+
+
+            </div>
+          
+
+        </div>
+        <div class="botones">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="button">Send</button>
+                </div>
+
+            </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
