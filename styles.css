@@ -81,11 +81,14 @@ select {
     background-color: rgb(90, 90, 90);
     display: flex;
     justify-content: space-between;
-    /*width: 50%;*/
     padding: 8px 20px;
     border-radius: 5px;
     margin-top: 8px;
+    gap:10px;
+    width:100%;
+   
 }
+
 
 .white-icon {
     color: white;
@@ -111,7 +114,7 @@ select {
 
 }
 
-.botones {
+.footer {
     background-color: rgb(243, 243, 243);
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
@@ -121,7 +124,7 @@ select {
     border-radius: 0 0 10px 10px;
 }
 
-.btn {
+.botones {
     display: flex;
     justify-content: end;
     gap: 10px;
@@ -142,7 +145,14 @@ select {
 .Cancel {
     background-color: gray;
 }
+.Cancel:hover{
+    background-color: rgb(128, 128, 128, 0.8);
+}
 
 .Send {
     background-color: rgb(10, 98, 251);
+}
+
+.Send:hover {
+    background-color: rgb(10, 98, 251, 0.8);
 }
