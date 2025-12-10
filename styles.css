@@ -1,9 +1,6 @@
 .container {
 
     border-spacing: 0;
-    ;
-
-
 }
 
 .form_body {
@@ -20,7 +17,6 @@
     padding: 15px 20px;
     background-color: rgb(243, 243, 243);
     border-radius: 10px 10px 0 0;
-
 }
 
 h3 {
@@ -45,46 +41,39 @@ h3 {
     font-weight: 400;
 }
 
-.borderinput{
+.borderinput {
     border: lightgray 2px solid;
     margin-top: 8px;
     padding: 3px 10px;
     border-radius: 5px;
     height: 40px;
-
 }
 
 textarea {
-
     border: lightgray 2px solid;
     margin-top: 8px;
     padding: 3px 10px;
     border-radius: 5px;
-
 }
 
 .colum-amount {
-
     display: flex;
     gap: 5px;
     align-items: center;
-
-
 }
 
 select {
     margin-top: 8px;
     height: 40px;
-
-
 }
 
-.defaultOp {color:rgb(118, 118, 118);
+.defaultOp {
+    color: rgb(118, 118, 118);
 }
 
 
-.SelectDate{
-    color:rgb(118, 118, 118);
+.SelectDate {
+    color: rgb(118, 118, 118);
 }
 
 
@@ -112,7 +101,7 @@ select {
     height: 40px;
     border: lightgray 2px solid;
     border-radius: 5px;
-     padding: 3px 10px;
+    padding: 3px 10px;
 }
 
 .Message_note {
@@ -130,31 +119,30 @@ select {
     border-spacing: 0;
     padding: 15px 20px;
     border-radius: 0 0 10px 10px;
-
 }
 
-.btn{
-    display:flex;
+.btn {
+    display: flex;
     justify-content: end;
-    gap:10px;
-   
+    gap: 10px;
 }
 
 
 
-.Cancel, .Send{
+.Cancel,
+.Send {
     border-radius: 5px;
-    margin:0;
+    margin: 0;
     padding: 5px 15px;
     color: white;
     border: 0px;
     font-weight: 500;
 }
 
-.Cancel{
+.Cancel {
     background-color: gray;
 }
 
-.Send{
+.Send {
     background-color: rgb(10, 98, 251);
 }
