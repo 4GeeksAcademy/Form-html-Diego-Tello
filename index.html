@@ -57,7 +57,7 @@
             </div>
             <!--FILA2-->
             <div class="row mb-3">
-                <div class="col-6 Fname  celdas">
+                <div class="col-6 FName celdas">
                     <label for="FName">First Name</label>
                     <input class="w-100 borderinput" name="FName" type="text" id="FName" placeholder="Diego" />
                 </div>
@@ -112,26 +112,26 @@
 
             <!--FILA4-->
 
-            <div class="row mb-3 object-fit-cover">
-                <div class="col-3 ">
+            <div class="row object-fit-cover">
+                <div class="co-3 mb-3 ">
                     <label class="Tit_PasarelaPagos" for="">We accept:</label>
                     <div class="PasarelaPagos">
-                        <div class="P_Mastercard">
+                        <div class="col-auto P_Mastercard">
                             <input type="radio" id="Mastercard" name="PasarelaPagos" />
                             <label for="Mastedcard"><i class="fa-brands fa-cc-mastercard fa-lg white-icon"></i></label>
                         </div>
 
-                        <div class="P_Visa">
+                        <div class="col-auto P_Visa">
                             <input type="radio" id="Visa" name="PasarelaPagos" />
                             <label for="Visa"><i class="fa-brands fa-cc-visa fa-lg white-icon"></i></label>
                         </div>
 
-                        <div class="P_Diners">
+                        <div class="col-auto P_Diners">
                             <input type="radio" id="Diners" name="PasarelaPagos" />
                             <label for="Diners"><i class="fa-brands fa-cc-diners-club fa-lg white-icon"></i></label>
                         </div>
 
-                        <div class="P_AmerExp">
+                        <div class="col-auto P_AmerExp">
                             <input type="radio" id="AmerExp" name="PasarelaPagos" />
                             <label for="AmerExp"><i class="fa-brands fa-cc-amex fa-lg white-icon"></i></label>
                         </div>
@@ -139,12 +139,12 @@
                     </div>
                 </div>
 
-                <div class="col-3 PaymentDate">
-                    <div><label for="Payment_Day">Select a payment date:</label></div>
-                   <div><input class="SelectDate" type="date" id="Payment_Day" name="reserva"></div>
+                <div class="col-sm-3 mb-3 PaymentDate">
+                    <div><label for="Payment_Day">Select a payment date</label></div>
+                    <div><input class="SelectDate" type="date" id="Payment_Day" name="reserva"></div>
                 </div>
-
-                <div class="col-6 Message">
+         
+                <div class="col-lg-6 mb-3 Message">
                     <label for="Message">Message</label>
                     <textarea class="w-100" type="text" name="Message" id="Message" rows="4"> </textarea>
                     <span class="Message_note">Add any notes here.</span>
@@ -152,20 +152,26 @@
 
 
             </div>
-          
+
 
         </div>
         <div class="botones">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div class="btn">
+                <button class="Cancel">Cancel</button>
+                <button class="Send">Send</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
                     <button class="btn btn-primary" type="button">Send</button>
                 </div>
 
-            </div>
-    </div>
-
-
-
+-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
