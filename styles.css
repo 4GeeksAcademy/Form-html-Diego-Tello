@@ -41,6 +41,9 @@ h3 {
     font-weight: 400;
 }
 
+.celdas{
+    margin-bottom: 15px;
+}
 .borderinput {
     border: lightgray 2px solid;
     margin-top: 8px;
@@ -95,8 +98,13 @@ select {
 
 }
 
+.cont_pasarelapagos{
+    margin-bottom: 15px;
+}
+
 .PaymentDate {
     display: block;
+    margin-bottom: 15px;
 }
 
 .PaymentDate input {

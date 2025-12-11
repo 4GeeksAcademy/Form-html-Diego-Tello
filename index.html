@@ -32,20 +32,20 @@
 
             </div>
             <!--FILA1-->
-            <div class="row mb-3">
-                <div class="col-5 Card celdas">
-                    <label for="NumTarjeta">Card #</label>
+            <div class="row">
+                <div class="col-lg-5 col-12 Card celdas">
+                    <label for="NumTarjeta">Card#</label>
                     <input class="w-100 borderinput" name="Card#" type=”number” id="NumTarjeta"
                         placeholder="1238 2418 4124 4783" />
                 </div>
 
-                <div class="col-3 CVC celdas">
+                <div class="col-lg-3 col-12 CVC celdas">
                     <label for="NumCVC">CVC#</label>
                     <input class="w-100 borderinput" name="CVC" type=”number” id="NumCVC" placeholder="148" />
 
                 </div>
 
-                <div class="col-4  Amount celdas">
+                <div class="col-lg-4 col-12 Amount celdas">
                     <label for="NumAmount">Amount</label>
                     <div class="colum-amount">
                         <i class="fa-solid fa-dollar-sign currency"></i>
@@ -56,13 +56,13 @@
 
             </div>
             <!--FILA2-->
-            <div class="row mb-3">
-                <div class="col-6 FName celdas">
+            <div class="row">
+                <div class="col-12 col-lg-6 FName celdas">
                     <label for="FName">First Name</label>
                     <input class="w-100 borderinput" name="FName" type="text" id="FName" placeholder="Diego" />
                 </div>
 
-                <div class="col-6 LName celdas">
+                <div class="col-lg-6 col-12 LName celdas">
                     <label for="LName">Last Name </label>
                     <input class="w-100 borderinput" name="LName" type=”text id="LName" placeholder="Tello" />
 
@@ -71,15 +71,15 @@
 
             </div>
             <!--FILA3-->
-            <div class="row mb-3">
+            <div class="row">
 
 
-                <div class="col-6 Card celdas">
+                <div class="col-lg-6 col-12 Card celdas">
                     <label for="City">City</label>
                     <input class="w-100 borderinput" name="City" type="text" id="City" placeholder="NY" />
                 </div>
 
-                <div class="col-3 State celdas">
+                <div class="col-lg-3 col-6 State celdas">
                     <label for="State ">State</label>
                     <select class="w-100 borderinput" name="State" type="text" id="State">
                         <option class="DefaultOp" value="default" selected disabled>Pick a State</option>
@@ -101,7 +101,7 @@
 
                 </div>
 
-                <div class="col-3  PCode celdas">
+                <div class="col-lg-3  col-6 PCode celdas">
                     <label for="PCode">Postal Code</label>
                     <input class="w-100 borderinput" name="PCode" type="text" id="PCode" placeholder="08012" />
                 </div>
@@ -113,9 +113,9 @@
             <!--FILA4-->
 
             <div class="row object-fit-cover">
-                <div class="col-lg-3 mb-3 ">
+                <div class="col-lg-3 col-6 cont_pasarelapagos">
                     <label class="Tit_PasarelaPagos" for="">We accept:</label>
-                    <div class="PasarelaPagos col-sm">
+                    <div class="PasarelaPagos">
                         <div class="P_Mastercard">
                             <input type="radio" id="Mastercard" name="PasarelaPagos" />
                             <label for="Mastedcard"><i class="fa-brands fa-cc-mastercard fa-lg white-icon"></i></label>
@@ -139,12 +139,12 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 mb-3 PaymentDate">
+                <div class="col-lg-3 col-6 PaymentDate">
                     <div><label for="Payment_Day">Select a payment date</label></div>
                     <div><input class="SelectDate" type="date" id="Payment_Day" name="reserva"></div>
                 </div>
 
-                <div class="col-lg-6 mb-3 Message">
+                <div class="col-lg-6 col-12 Message">
                     <label for="Message">Message</label>
                     <textarea class="w-100" type="text" name="Message" id="Message" rows="4"> </textarea>
                     <span class="Message_note">Add any notes here.</span>
